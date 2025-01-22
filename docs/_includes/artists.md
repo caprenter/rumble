@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-md-3" markdown="1">
- ![{{ artist.Name }}](/assets/images/bands/{{ artist.Image }}){:class="img-responsive"}
+ ![{{ artist.Name }}]({{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/assets/images/bands/{{ artist.Image }}){:class="img-responsive"}
 </div>
 
 <div class="col-md-6 px-5" markdown="1">
