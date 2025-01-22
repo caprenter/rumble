@@ -1,0 +1,201 @@
+---
+layout: default
+class: 'page-template'
+---
+<!-- < default -->
+
+<!-- This is a page template. A page outputs content just like any other post, and has all the same -->
+    <!-- attributes by default, but you can also customise it to behave differently if you prefer.  -->
+
+<!-- Everything inside the #post tags pulls data from the page -->
+<!-- #post -->
+{% if page.splash %}
+{% capture background-image %}
+style="background-image: url({{ site.baseurl }}/assets/images/splashes/{{ page.splash }})"
+{% endcapture %}
+{% else %}
+{% capture background-image %}
+style="background-image: url({{ site.baseurl }}/assets/images/splashes/BMTlogoSplash.jpg)"
+{% endcapture %}
+{% endif %}
+
+<header class="main-header post-head" {{ background-image }}>
+{% if page.image-credit %}{% include image-credit.html %}{% endif %}
+</header>
+
+<main class="content" role="main">
+    <article class="listing">
+        <!-- Everything inside the #post tags pulls data from the post -->
+
+        <header class="post-header">
+            <h1 class="post-title">{{ page.Name }}</h1>
+        </header>
+
+<section class="post-content main-page">
+<div class="row"> 
+<div class="column-8">
+{% if page.Member == "yes"%}
+<div class="member-badge">
+<p>Rumble Up the Ryshworth Member</p>
+</div>
+{% endif %}
+
+<div class="org-description" markdown="1">
+    {% capture description %}{{ page.Description }}{% endcapture %}
+    {{ description | markdownify }}
+</div>
+
+<div class="org-contact">
+{% capture address %}
+{{ page.Address }}{% if page.Postcode %}, {{ page.Postcode }}{% endif %}
+{% endcapture %}
+{{ address | markdownify }}
+</div>
+
+<div class="org-contact">
+{% if page.internal-link %}
+{% capture internal-link %}
+**See also:** <a href="{{ page.internal-link | relative-url }}">{{page.internal-link-text}}</a>
+{% endcapture %}
+{{ internal-link | markdownify }}
+{% endif %}
+</div>
+
+<div class="org-contact">
+{% if page.email %}{% capture email %}* **Email:** [{{ page.email }}](mailto:{{ page.email }}){% endcapture %}{{ email | markdownify }}{% endif %}
+{% if page.Web %}{% capture web %}* **Web:** [{{ page.Web }} <i class="fa fa-external-link" aria-hidden="true"></i>]({{ page.Web }}){:target="_blank" rel="noopener noreferrer"}{% endcapture %}{{ web | markdownify }}{% endif %}
+{% if page.Facebook %}{% capture facebook %}* **Facebook:** [{{ page.Facebook }} <i class="fa fa-external-link" aria-hidden="true"></i>]({{ page.Facebook }}){:target="_blank" rel="noopener noreferrer"}{% endcapture %}{{ facebook | markdownify }}{% endif %}
+{% if page.Twitter %}{% capture twitter %}* **Twitter:** [{{ page.Twitter }} <i class="fa fa-external-link" aria-hidden="true"></i>](https://twitter.com/{{ page.twitter }}){:target="_blank" rel="noopener noreferrer"}{% endcapture %}{{ twitter | markdownify }}{% endif %}
+{% if page.instagram %}{% capture instagram %}* **Instagram:** [{{ page.instagram }} <i class="fa fa-external-link" aria-hidden="true"></i>](https://www.instagram.com/{{ page.instagram }}){:target="_blank" rel="noopener noreferrer"}{% endcapture %}{{ instagram | markdownify }}{% endif %}
+</div>
+</div>
+<div class="column-4 organisation-image">
+{% if page.logo %}
+<img src="{{ '/assets/images/logos' | relative_url }}/{{ page.logo }}" alt="{{ page.name }}" title="{{ page.name }}"  class="img-responsive" />
+{% endif %}
+</div>
+</div>
+</section>
+
+{% capture EventsList %}
+
+{% assign dateToday = 'now' | date: "%Y-%m-%d" %}
+
+
+{% assign events = site.data.events | sort: "Date"  %}
+{% assign artists = site.data.artists %}
+{% assign venues = site.data.venues %}
+
+{% for event in events %}
+{% assign mod2 = forloop.index | modulo: 2 %}
+{% if event.Venue == page.Name  %}
+{% if event.Date >= dateToday  %}
+{% assign HasEvents = 'yes %' %}
+
+<!-- GROUP EVENTS BY DATE -->
+{% if forloop.first %}
+## {{ event.Date | date: "%A %d %B %Y" }}
+{:class="event-date"}
+{% else %}
+{% if event.Date != date %}
+## {{ event.Date | date: "%A %d %B %Y" }}
+{:class="event-date"}
+{% endif %}
+{% endif %}
+{% assign date = event.Date %}
+
+<div class="event-item {% if mod2 == 0 %}even{% else %}odd{% endif %}" markdown="1">
+<div class="row">
+<!--{% if event.largeimageurl %}
+<div class="col-md-4 image" markdown="1">
+<img class="img-responsive" src="{{ event.largeimageurl }}"/>
+{% if event.Tickets %}[Get Tickets]({{ event.Tickets }}){:class="btn btn-primary"}{% endif %}
+</div>
+{% endif %}
+<div class="col-md-8" markdown="1">-->
+
+<!-- PERFORMERS -->
+<div markdown="1">
+{% if event.Presents %}<h5>{{ event.Presents }}</h5>{% endif %}
+{% assign performers = event.Artists | split: "," %}
+{% for performer in performers -%}
+    {%- if forloop.length > 1 -%}
+    {% if forloop.first %}
+### {{ performer }}
+Support: {% continue %}{% endif %}
+{{ performer }}{% unless forloop.last %}, {% endunless -%}
+    {% else %}
+### {{ performer }}
+    {%- endif -%}
+{% endfor %}
+
+{% if event.Cancelled !="1"  %}
+<!-- DESCRIPTION -->
+{{ event.Description }}
+{: class="description" }
+<!--<div class="event-badge" markdown="1">[Event link]({{ event.Link }})</div>-->
+<!--{% if event.Time %}Doors: {{ event.Time | date: "%l:%M%P" }} <br/>{% endif %}-->
+{% if event.Time %}*From: {{ event.Time}}*
+{: class="description" }{% endif %}
+<!--{% if event.link %}[Get Tickets for {{ event.eventname }}]({{ event.link }}){:class="btn btn-primary"}{% endif %}-->
+<!--{% if event.entryprice %}£{{ event.entryprice }}{% endif %}-->
+
+
+<!-- Price -->
+*Price: {{ event.Price }}*
+{: class="description" }
+{% if event.Tickets %} [Buy Tickets]({{ event.Tickets }}){% endif %}
+{% else %} <!-- is cancelled -->
+## CANCELLED
+{{ event.CancelledText }}
+{: class="description" }
+{% endif %} <!-- not cancelled -->
+
+<!-- LINKS -->
+{% for performer in performers -%}
+{% assign artist = site.data.artists | where:"Name", performer | first %}
+<div class="performer-links" markdown="1">
+{%- if forloop.length > 1 -%}* {{artist.Name }}:{% endif %}
+{% if event.Cancelled !="1"  %}
+{% if event.Link %}* <i class="fa-solid fa-globe"></i> [Event Info]({{ event.Link }}){% endif %}
+{% else %} <!-- is cancelled -->
+{% if event.CancelledLink %}* <i class="fa-solid fa-globe"></i> [Cancellation Info]({{ event.CancelledLink }}){% endif %}
+{% endif %} <!-- not cancelled -->
+
+{% if artist.Web %}* <i class="fa-solid fa-globe"></i> [Website]({{ artist.Web }}){% endif %}
+{% if artist.Facebook %}* <i class="fa-brands fa-facebook"></i> [Facebook]({{ artist.Facebook }}){% endif %}
+{% if artist.Twitter %}* <i class="fa-brands fa-twitter"></i> [Twitter]({{ artist.Twitter }}){% endif %}
+{% if artist.Instagram %}* <i class="fa-brands fa-instagram"></i> [Instagram]({{ artist.Instagram }}){% endif %}
+</div>
+{% endfor %}
+
+{% if event.LastUpdated %}Data fetched on: {{ event.LastUpdated | date: "%A %d %B %Y" }} 
+{: class="last-updated" }{% endif %}
+</div>
+
+</div>
+</div>
+{% else %} <!-- in the future -->
+{% assign HasPastEvents = 'yes' %}
+{% endif %}
+{% endif %} <!-- at this Venue -->
+{% endfor %}
+
+{% endcapture %}
+{% if HasEvents %}
+<h2>Upcoming Events</h2>
+{{ EventsList | markdownify }}
+{% endif %}
+
+{% if HasPastEvents %}
+<h2>Previous Events</h2>
+{% include previous-events.md %}
+{% endif %}
+{% capture AboutThisPage %}
+{% include about-this-page.md %}
+{% endcapture %}
+{{ AboutThisPage | markdownify }}
+
+   </article>
+</main>
+<!-- /post -->

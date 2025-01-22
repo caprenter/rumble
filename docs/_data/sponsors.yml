@@ -1,0 +1,64 @@
+- name: The Loft
+  website: https://www.theloftcafebingley.co.uk/
+  #facebook:
+  #instagram: 
+  #twitter: 
+  #email:
+  logo: the_loft.png
+  #image:
+  #type: 
+  #member: 
+  #short-description: |
+  #   
+  # description: |
+  #   
+
+- name: Martinez Wine Bar
+  website: https://martinez.co.uk/
+  #facebook: 
+  # twitter: 
+  # logo: 
+  # email: 
+  logo: martinez.png
+  # type: 
+  # member: 
+  # short-description: |
+  #   A primary school where we know and value every child and family.
+
+  # description: |
+  #   A primary school where we know and value every child and family.
+
+  #   We are committed to providing an inspirational environment, through a culture of success and achievement, in which individuals can flourish as confident, happy learners.
+
+- name: Specsavers
+  website: https://www.specsavers.co.uk/stores/bingley
+  #facebook: 
+  # twitter: 
+  # logo: 
+  # email: 
+  logo: specsavers.png
+  # type: 
+  # member: 
+  # short-description: |
+  #  
+
+  # description: |
+  #  
+
+- name: Five Rise Records
+  website: https://www.fiveriserecords.co.uk/
+  #facebook: 
+  # twitter: 
+  # logo: 
+  # email: 
+  logo: five-rise-records.png
+  # type: 
+  # member: 
+  # short-description: |
+  #   A primary school where we know and value every child and family.
+
+  # description: |
+  #   A primary school where we know and value every child and family.
+
+  #   We are committed to providing an inspirational environment, through a culture of success and achievement, in which individuals can flourish as confident, happy learners.
+

@@ -1,0 +1,111 @@
+# Jekyll configuration
+#markdown: redcarpet
+#highlighter: pygments
+markdown: kramdown
+highlighter: rouge
+# paginate: 5
+language: 'en-uk'
+
+# Website info
+name: "Rumble Up the Ryshworth"
+title: "Rumble Up the Ryshworth" # the name of your site, e.g. ACME Corp.
+#tagline: "Bringing together the people that care about music in our"
+email: info@bingleymusictown.org.uk
+description: >- # this means to ignore newlines until "baseurl:"
+ Rumble Up the Ryshworth brings together the people that care about music in our area, to make sure there are great musical opportunities for everyone now, and into the future.
+
+logo: 'assets/images/logo.jpg' # No leading slash!
+author: Rumble Up the Ryshworth
+url: "https://bingleymusictown.org.uk" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+#google_analytics: UA-111111111-1
+#twitter:
+#  username:
+#  card: summary #keep this to generate a twitter share card
+#
+# For the Gallery
+defaults:
+  - scope:
+      path: "assets/images/gallery"
+    values:
+      image: true
+
+#short_url: 'jekyllt.github.io/jasper/'
+#google_analytics: UA-69281367-1
+#disqus: username
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+#baseurl: /jasper/
+
+# Permalinks
+#permalink: /:title
+# permalink: /author/:username
+# permalink: /tag/:tag
+
+# gems and other configs
+# plugins: [jekyll-paginate]
+
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
+
+
+# Settings for building master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: false
+lsi: false
+username: caprenter
+repo: bingley-music-town
+branch: master
+#relative_source: ../jasper/
+#destination: ../jasper-pages/
+production_url:  https://bingleymusictown.org.uk/
+source_url:  https://github.com/caprenter/bingley-music-town/
+
+# gems and other configs
+plugins:
+ - pagemaster
+ - jekyll-redirect-from
+
+# Jekyll collection definitions
+# Pagemaster bases its configuration on these
+collections:
+  organisations:
+    output: true
+    source: organisations.yml
+    id_key: name
+    layout: org_page
+  venues:
+    output: true
+    source: venues.csv
+    id_key: Name
+    layout: venue_page
+  help:
+    output: true
+    source: help.yml
+    id_key: slug
+    layout: help_page
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
+  - node_modules
+  - .git
+  - scripts*

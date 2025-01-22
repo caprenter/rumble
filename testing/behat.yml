@@ -1,0 +1,48 @@
+default:
+  suites:
+    my_suite:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        # - Drupal\DrupalExtension\Context\MinkContext
+        # - Behat\MinkExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension:
+      base_url:  'https://bingleymusictown.org.uk/'
+      sessions:
+        default:
+          goutte: ~
+        javascript:
+          selenium2:
+            wd_host: http://selenium:4444/wd/hub
+            capabilities: {"browserName": "chrome", "browser": "chrome", 'chrome': {'switches': ['--disable-gpu', '--window-size=1280,1600']}, "marionette": true}
+    Drupal\DrupalExtension:
+      blackbox: ~
+      # drush:
+      #   root: /var/www/lamrt.org.uk
+      #   binary: 'vendor/bin/drush'
+      region_map:
+        ## added regions
+        # all pages
+        navigation: "#navbarSupportedContent"
+        # header: ".wp-block-navigation"
+        # content: ".content"
+        footer: ".footer"
+        supported_by: ".supported-by"
+        listings: ".listing"
+        # # Home page 
+        # home_page_before_you_set_off: "#block-beforeyousetoff"
+        # home_page_incidents: "#block-views-block-incidents-block-1"
+        # home_page_news: "#block-views-block-news-block-1"
+        # # All downloads in Drupal get their own field
+        # download: ".field--name-upload"
+        # # Navigation Tabs
+        # tabs: ".tabs"
+
+local:
+  extensions:
+      Behat\MinkExtension:
+        # This is where the local Jekyll site is found.
+        # The IP address is set in the docker-compose.yml file
+        # MUST start with http://
+        base_url:  'http://172.22.0.103:4000'
