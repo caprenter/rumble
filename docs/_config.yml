@@ -12,12 +12,12 @@ title: "Rumble Up the Ryshworth" # the name of your site, e.g. ACME Corp.
 #tagline: "Bringing together the people that care about music in our"
 email: info@bingleymusictown.org.uk
 description: >- # this means to ignore newlines until "baseurl:"
- Rumble Up the Ryshworth brings together the people that care about music in our area, to make sure there are great musical opportunities for everyone now, and into the future.
+ Rumble Up The Ryshworth is set of Pay What You Feel gigs that brings Live Music from Alternative, Independent Artists to the Bingley area.
 
 logo: 'assets/images/logo.jpg' # No leading slash!
 author: Rumble Up the Ryshworth
-url: "https://bingleymusictown.org.uk" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://caprenter.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/rumble" # the subpath of your site, e.g. /blog
 #google_analytics: UA-111111111-1
 #twitter:
 #  username:
@@ -66,12 +66,12 @@ defaults:
 safe: false
 lsi: false
 username: caprenter
-repo: bingley-music-town
+repo: rumble
 branch: master
 #relative_source: ../jasper/
 #destination: ../jasper-pages/
-production_url:  https://bingleymusictown.org.uk/
-source_url:  https://github.com/caprenter/bingley-music-town/
+# production_url:  https://bingleymusictown.org.uk/
+source_url:  https://github.com/caprenter/rumble/
 
 # gems and other configs
 plugins:
@@ -80,22 +80,8 @@ plugins:
 
 # Jekyll collection definitions
 # Pagemaster bases its configuration on these
-collections:
-  organisations:
-    output: true
-    source: organisations.yml
-    id_key: name
-    layout: org_page
-  venues:
-    output: true
-    source: venues.csv
-    id_key: Name
-    layout: venue_page
-  help:
-    output: true
-    source: help.yml
-    id_key: slug
-    layout: help_page
+#collections:
+
 
 exclude:
   - README.md
