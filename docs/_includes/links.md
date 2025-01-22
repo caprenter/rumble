@@ -1,6 +1,6 @@
 ### Links
 
-[Home](/{% if site.baseurl %}{{ site.baseurl }}{% endif %})<br/>
+[Home]({{ site.url }}/{% if site.baseurl %}{{ site.baseurl }}{% endif %})<br/>
 <!-- [Upcoming Events]({% link live.md %})<br/> -->
 <!-- [Previous Events]({% link previous-events.md %})<br/> -->
 <!-- [Gallery]({% link gallery.md %})<br/> -->
