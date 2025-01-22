@@ -1,10 +1,10 @@
 ### Links
 
-[Home](/)<br/>
-[Upcoming Events]({% link live.md %})<br/>
-[Previous Events]({% link previous-events.md %})<br/>
-[Gallery]({% link gallery.md %})<br/>
-[Contact]({% link contact.md %})<br/>
+[Home](/{% if site.baseurl %}{{ site.baseurl }}{% endif %})<br/>
+<!-- [Upcoming Events]({% link live.md %})<br/> -->
+<!-- [Previous Events]({% link previous-events.md %})<br/> -->
+<!-- [Gallery]({% link gallery.md %})<br/> -->
+[Contact]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/contact )<br/>
 <!--[Rumble Up the Ryshworth on Facebook<i class="fa fa-external-link" aria-hidden="true"></i>](https://facebook.com/bingleymusictown){:target="_blank" rel="noopener noreferrer"}-->
 
 <div class="icons">

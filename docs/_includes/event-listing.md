@@ -19,7 +19,7 @@
 {{ event.Date | date: "%A %d %B %Y" }} <span style="color: #000">/</span> Doors: {{ event.Time}} / {{ event.Price }}
 </div>
 
-<a href="/events/{{ event.Date | date: '%b-%Y' | downcase }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">More Details</a>
+<a href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/events/{{ event.Date | date: '%b-%Y' | downcase }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">More Details</a>
 
 {% if event.Cancelled == "1"  %}
 ## CANCELLED
