@@ -11,11 +11,11 @@ class: 'page-template'
 <!-- #post -->
 {% if page.splash %}
 {% capture background-image %}
-style="background-image: url({{ site.baseurl }}/assets/images/splashes/{{ page.splash }})"
+style="background-image: url({{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/assets/images/splashes/{{ page.splash }})"
 {% endcapture %}
 {% else %}
 {% capture background-image %}
-style="background-image: url({{ site.baseurl }}/assets/images/splashes/BMTlogoSplash.jpg)"
+style="background-image: url({{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/assets/images/splashes/BMTlogoSplash.jpg)"
 {% endcapture %}
 {% endif %}
 

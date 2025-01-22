@@ -10,7 +10,7 @@ class: 'page-template'
 <!-- Everything inside the #post tags pulls data from the page -->
 <!-- #post -->
 
-<header class="main-header page" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url({{ site.baseurl }}/assets/images/{{ page.cover }}); background-position-y:0">
+<header class="main-header page" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url({{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/assets/images/{{ page.cover }}); background-position-y:0">
 
     <div class="vertical">
         <div class="main-header-content inner">

@@ -1,5 +1,5 @@
 <div class="col-md-3" markdown="1">
- ![{{ event.Title }}](/assets/images/bands/{{ event.Image1 }}){:class="img-responsive"}
+ ![{{ event.Title }}]({{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/assets/images/bands/{{ event.Image1 }}){:class="img-responsive"}
 </div>
 
 <div class="col-md-6 px-5" markdown="1">
@@ -29,6 +29,6 @@
 </div>
 {% if event.Image2  %}
 <div class="col-md-3" markdown="1">
- ![{{ event.Title }}](/assets/images/bands/{{ event.Image2 }}){:class="img-responsive"}
+ ![{{ event.Title }}]({{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/assets/images/bands/{{ event.Image2 }}){:class="img-responsive"}
 </div>
 {% endif %}

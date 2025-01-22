@@ -3,7 +3,7 @@
     {% assign indexmod4 = forloop.index | modulo: 4 %}
     {% if indexmod4 == 1 %}<div class="row">{% endif %}
     <div class="column">
-        <a href="{{ sponsor.website }}"><img src="{{ '/assets/images/sponsors_cf2024' | relative_url }}/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}"  class="img-responsive" style="object-fit: contain;"/></a>        
+        <a href="{{ sponsor.website }}"><img src="{{ '{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/assets/images/sponsors_cf2024' | relative_url }}/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}"  class="img-responsive" style="object-fit: contain;"/></a>        
         <!-- <div>
             <a href="{{ sponsor.url }}" class="org-link">
             {{ sponsor.name }}
