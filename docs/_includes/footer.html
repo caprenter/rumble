@@ -2,24 +2,23 @@
     <h2>{{ site.name }}</h2>
     <div class="strapline">{{ site.tagline }}</div>
 </div>
-<div class="row">
-    <div class="column">
+
+<div class="footer-title">
+<div class="row align-items-center">
+    <div class="col-md-4">
     {% capture links %}{% include links.md %}{% endcapture %}
     {{ links | markdownify }}
     </div>
-    <div class="column">
-        <div class="row supported-by">
-            <h3>Supported by</h3>
-            <div class="col-md-6 align-self-center">
-                <a href="https://bingleymusictown.org.uk/"><img style="max-width:150px" src="{{ '/assets/images/our_logos/BMT_logo_White.png' | relative_url }}" alt="Bingley Music Town Logo" class="img-responsive"></a>
-            </div>
-            <div class="col-md-6 align-self-center">
-            <a href="https://www.cooperativeit.co.uk/"><img style="max-width:270px" src="{{ '/assets/images/ci-masthead.png' | relative_url }}" alt="Cooperative IT" class="img-responsive"></a>
-            </div>
-            
-        </div>
+    <div class="col-lg-2 col-md-3">
+        <h3>Supported by</h3>
+        <a href="https://bingleymusictown.org.uk/" class="footer-logo"><img style="max-width:150px" src="{{ '/assets/images/our_logos/BMT_logo_White.png' | relative_url }}" alt="Bingley Music Town Logo" class="img-responsive"></a>
     </div>
-</div> 
+    <div class="col-lg-2 col-md-3">
+        <a href="https://www.cooperativeit.co.uk/" class="footer-logo"><img style="max-width:270px" src="{{ '/assets/images/ci-masthead.png' | relative_url }}" alt="Cooperative IT" class="img-responsive"></a>
+    </div>
+</div>
+</div>
+
 <div class="copyright">
     <p>All content &copy; Rumble Up the Ryshworth unless otherwise stated. <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/privacy">Privacy Statement</a></p>
 </div>

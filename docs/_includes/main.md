@@ -18,13 +18,14 @@ It is supported by [Bingley Music Town](https://bingleymusictown.org.uk/), an or
 
 **Pay What You Feel** means you can turn up even if you're skint. 
 
+If you do want to pay, you can **pay on the night** by **cash** or **card** and **online via the links on each event page**.
+
 Our costs are low, equipment is lent and donated, and the people running the event volunteer their time and skills.
 
 **All the money we collect from donations goes to the bands.**<br>
 (apart from the £20 we have to pay for the room)
 
 You can also **support the bands directly** by buying their music and merch.
-
 
 # Volunteer
 We provide volunteering opportunities and experience for people in all aspects of live music events. [Get in touch]({% link contact.md %}) if you'd like to get involved. 
