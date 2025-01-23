@@ -4,6 +4,8 @@
 
 # What’s On
 
+<h2 class="text-center all-gigs">All gigs are on the Third Friday Of The Month</h2>
+
 {% capture upcoming-events %}{% include upcoming-events.md %}{% endcapture %}
 {{ upcoming-events | markdownify }}
 
@@ -11,6 +13,18 @@
 Rumble Up The Ryshworth is set of Pay What You Feel gigs that brings Live Music from Alternative, Independent Artists to the Bingley area.
 
 It is supported by [Bingley Music Town](https://bingleymusictown.org.uk/), an organisation that brings together the people that care about music in the area to make sure there are great musical opportunities for everyone now, and into the future.
+
+# Pay What You Feel
+
+**Pay What You Feel** means you can turn up even if you're skint. 
+
+Our costs are low, equipment is lent and donated, and the people running the event volunteer their time and skills.
+
+**All the money we collect from donations goes to the bands.**<br>
+(apart from the £20 we have to pay for the room)
+
+You can also **support the bands directly** by buying their music and merch.
+
 
 # Volunteer
 We provide volunteering opportunities and experience for people in all aspects of live music events. [Get in touch]({% link contact.md %}) if you'd like to get involved. 

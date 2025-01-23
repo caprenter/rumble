@@ -20,7 +20,7 @@ cover: splashes/BillyBilly5p.jpg
     <div class="vertical">
         <div class="main-header-content inner">
            <h1 class="page-title">Live Music</h1>
-           <h2 class="page-sub-title">Third Friday Of The Month</h2>
+           <h2 class="page-sub-title">Independent ~ Alternative</h2>
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
