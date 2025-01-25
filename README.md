@@ -1,7 +1,7 @@
 # Rumble Up the Ryshworth Website
 
 ## About
-This is a static site that displays at http://bingleymusictown.org.uk/
+This is a static site that displays at https://rumbleupbingley.co.uk/
 
 ## Deployment
 It is deployed via the docs directory of the main branch of this repo using Github Pages.
@@ -9,7 +9,7 @@ It is deployed via the docs directory of the main branch of this repo using Gith
 ### Cron update
 We rebuild the site once a day using the GitHub API and [gh-cli](https://cli.github.com/) tool, using a cron job on another server (David's). 
 
-This means our 'Live music today' and 'Make Music Today' data is up to date.
+This means that our What's On data stays up to date as we pass and event date.
 
 Use the script under 
 
@@ -53,9 +53,17 @@ Clone the repository
 
 ## Add a new gig
 
+You need to:
+
+* [Splash Image](#splash-image)
+* [Band Images](#band-images)
+* [Update the spreadsheet](#update-the-spreadsheet)
+* [Download the event data](#download-the-event-data)
+* [Create an event page](#create-an-event-page)
+
 ### Splash Image
 
-Create a new 16:9 splash image to go at the top of the page and stored it in `assets/images/splashes`
+Create a new 16:9 splash image to go at the top of the page and store it in `assets/images/splashes`
 
 ### Band Images
  
@@ -68,13 +76,13 @@ Add the gig data to the [Bingley Music Town Live Music spreadsheet](https://docs
 
 #### Create a new event in the 'Events' tab
 
-NB: The bands should be comma separated in the Events tab, with NO space between them. e.g. band 1,band 2
+**NB** The bands should be comma separated in the Events tab, with NO space between them. e.g. band 1,band 2
 
-NB: The images should all be the file names of 4:3 images that are stored in `assets/images/bands`
+**NB** The images should all be the file names of 4:3 images that are stored in `assets/images/bands`
 
 #### Make sure / add the artists details to the 'Artists' tab
 
-NB: The image should be the file name of a 4:3 image that is stored in `assets/images/bands`
+**NB** The image should be the file name of a 4:3 image that is stored in `assets/images/bands`
 
 ### Download the event data
 
@@ -84,7 +92,21 @@ In /docs/scripts run
 
 This fetches 3 csv files (artists.csv, events.csv, venues.csv) and places them in `_data`
 
-### Generate SumUp codes and links
+**NB** This is enough to update the What's on listing on the home page. BUT we also need an event page...
+
+### Create an event page 
+
+Copy an existing event from the `/events' directory and rename it in mmmyyyyy format. 
+
+Edit the front matter, updating the `title`, `date`, and `cover` items.
+
+The page title that overlays the splash/cover image is generated from the `title` and the (formated) `date` field 
+
+Change the names of the artists in the `assign artist` sections.
+
+Next update the SumUp codes (see below) 
+
+#### SumUp codes and links
 
 Create a payment link at SumUp - make sure to add a notes field.
 
@@ -92,112 +114,14 @@ Create a payment link at SumUp - make sure to add a notes field.
 * link: a payment url e.g. https://pay.sumup.com/b2c/Q9ARAVHL
 * qrcode: an image file in this format: qrcode_sumup_jan2025.png
 
+Update the `include` statement on your event page to use those values.
 
-
-We generate markdown for each organisation page by using the pagemaster plugin/gem.
-
-This creates pages from a .yml data file, in this case, organisations.yml, by running 
-
-    bundle exec jekyll pagemaster {collection name}
-
-In practice we use: 
-
-    bundle exec jekyll pagemaster organisations
-    ## OR with docker:
-    docker exec -it jekyll /bin/bash -c 'bundle exec jekyll pagemaster organisations'
-
-This command will generate markdown for views for each item in the collection under ./_{collection name}
-
-To update generated markdown delete that directory as existing files are not updated when pagemaster runs
-
-### Adding an organisation
-* Add the data in `_data/organisations.yml`
-* Add a logo to `/assets/images/logos`
-* Add an image if you have one to `/assets/images/organisations` 
-* Build the page with `bundle exec jekyll pagemaster organisations`
-
-### Updating Information about an organisation
-* Update the data in `_data/organisations.yml`
-* Delete the corresponding entry under `/_organisations` (or the entire _organisations directory)
-* rebuild that page(s)with `bundle exec jekyll pagemaster organisations`
-
-## What if my organisation is also a venue
-
-Create an organisation in organisations.yml - you don't need to complete all fields
-
-we use the `jekyll-redirect-from` gem to redirect the org page to a venue page. 
-See Cottingley Community Centre as an example.
-
-## Generating individual venue pages
-We generate markdown for each venue page by using the pagemaster plugin/gem.
-
-This creates pages from a .yml data file, in this case, venues.yml, by running 
-
-    bundle exec jekyll pagemaster {collection name}
-
-In practice we use: 
-
-    bundle exec jekyll pagemaster venues
-    ## OR with docker:
-    docker exec -it jekyll /bin/bash -c 'bundle exec jekyll pagemaster venues'
-
-This command will generate markdown for views for each item in the collection under ./_{collection name}
-
-To update generated markdown delete that directory as existing files are not updated when pagemaster runs
-
-### Adding an venue
-* Add the data to our Google Spreadsheet - see below.
-* Run the scripts/fetch_events_data.sh to fetch the data from the spreadsheet
-* The data will now be in `_data/venues.yml`
-* Build the page with `bundle exec jekyll pagemaster venues`
-
-### Updating Information about a venue
-* Update the data in the Google Spreadsheet
-* Run the scripts/fetch_events_data.sh to fetch the data from the spreadsheet
-* The data will now be in `_data/venues.yml`
-* Delete the corresponding entry under `/_venues` (or the entire _venues directory)
-* rebuild that page(s)with `bundle exec jekyll pagemaster venues`
-
-## Internal links between organisations and venues
-
-Put the path and the link text in the venues spreadsheet, and/or in the organisations.yml file.
-
-Examples of both exist. 
-
-## Generating help pages and cards
-We generate markdown for each help page by using the pagemaster plugin/gem.
-
-This creates pages from a .yml data file, in this case, help.yml, by running 
-
-    bundle exec jekyll pagemaster {collection name}
-
-In practice we use: 
-
-    bundle exec jekyll pagemaster help
-
-This command will generate markdown for views for each item in the collection under ./_{collection name}
-
-To update generated markdown delete that directory as existing files are not updated when pagemaster runs
-
-### Adding a help
-* Add the data in `_data/help.yml`
-* Use the order field to help sort the items - lower numbers are first in lists
-* Add images to `/assets/images/helps`
-* Also create a resized image of max width 310px and with .resized.jpg as part of the file name
-* Build the page with `bundle exec jekyll pagemaster help`
-
-### Updating Information about a help
-You can edit _help/<pagename> directly.
-If you want to regenerate that page from the help.yml data, delete it first then run the pagemaster script.
-
-### Helps on the Front Page
-These are limited to the first 3 in the list as order by the order field.
 
 ## Images
 
-### Banner images
+### Banner/Splash images
 
-Main banner images are currently 1280x800px
+Main banner images are 16:9 aspect ratio .jpg files (if you need dimensions try 1280x800px)
 
 ### Gallery
 
@@ -231,18 +155,11 @@ These scripts need to be on the page:
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
 
-### Help Images
+### Band Images
 
-These images don't need to be wider then 350px.
+Band images are 4:3 aspect ratio.
 
-### Instrument Images
-
-These images don't need to be wider then 350px.
-
-### Logos in the pre-footer area
-These are included in the `index.md` file from `_include/gallery.html` and should show all the logos that we have.
-
-## Live music, previous events listings
+## Previous events listings
 These are generated from public google spreadsheets:
 https://docs.google.com/spreadsheets/d/1-Eugy7Wfl0O2dSach2D2dOoE8JEW2tI3sqChuCvLUYg/edit
 
@@ -258,34 +175,7 @@ Fetch the data with the script:
     #Fetch and commit and push changes to origin main
     ./fetch_events_data.sh update push
 
-We use the data to build a live listing page, a previous events page, and to populate the front page with live events today.
-
-## Regular activities
-
-The Regular activities page is generated from a bunch of individual files that give information about an activity on a certain day of the week.
-
-We have individual files for the first week of the month, third thursday and so on.
-
-These are pulled together with scripts.
-
-To add or remove a listing you need to check:
-* includes/regular-<day>-<optionally-occurance>.md
-* make-today.md
-* regular-activities.md
-
-## Make Music Listing (front page)
-
-These are generated from lots of small includes files that contain data about activities that happen on each individual day of the week.
-
-### Christmas / Be Careful Dates etc
-
-`make-today.md` contains a list of dates that can be set to flag a warning on days when regular activities might not happen e.g. Christmas
-
-## Instruments
-Data is held in a google spreadsheet. Google forms collect the basic info.
-We need to download the instruments sheet as a csv to update the website.
-We could make this a public sheet and automate it.
-Images are saved and named and then the filename is added to the spreadsheet
+We use the data to build the What's On data on the front page, a previous events page, and some of the data on the individual events pages.
 
 # Testing
 
