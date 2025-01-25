@@ -123,6 +123,11 @@ Update the `include` statement on your event page to use those values.
 
 Main banner images are 16:9 aspect ratio .jpg files (if you need dimensions try 1280x800px)
 
+Handy resize code
+
+     find . -name '*.jpg' -size +100k  -print0 | while read -d $'\0' file ; do smartresize "$file" 1280 . ; done
+
+
 ### Gallery
 
 Gallery Images should be no wider than 1024px
