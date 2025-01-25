@@ -1,15 +1,15 @@
 ---
 title: Rumble Up the Ryshworth Privacy Policy
 layout: page 
-cover: splashes/BMTlogoSplash.jpg #No leading slash
-image-credit: 
-navigation: true
+cover: splashes/privacy.jpg #No leading slash
+#image-credit: 
+#navigation: true
 ---
 
 This privacy policy will explain how we, Rumble Up the Ryshworth, use the personal data we collect from you.
 
 ## What data do we collect?
-Rumble Up the Ryshworth collects the following data:
+Rumble Up the Ryshworth may collect the following data:
 * Personal identification information          
   * Full Names          
   * email addresses         
@@ -27,26 +27,20 @@ Rumble Up the Ryshworth collects the following data:
 ### How do we collect your data?
 You directly provide Rumble Up the Ryshworth with most of the data we collect.
 
-We collect data and process data when you:
+We may collect data and process data when you:
 
-* Complete a digital or paper registration form, or a parental consent form, or a membership form.    
-* Speak to us to give us information that we enter into our database.
+* Make an online payment with a third party payment processor.
 * Attend our events and meetings.
 * You are photographed, recorded, or videoed as part of our activities
-* You complete other paperwork, such as evaluation forms, registration forms, etc
+* You complete other paperwork, such as evaluation forms, etc
 * Send us an text, email or other form of electronic communication
 
 
-Rumble Up the Ryshworth may also receive your data indirectly from organisations or individuals that refer you to our services.
-
 ### How will we use your data?
 Rumble Up the Ryshworth collects your data so that we can:
-* Run our organisation. As a membership organisation we need to communicate with our members so they can actively participate in their organisation.
-* To keep an accurate up to date register of our members. The register of members can be viewed by other members on request.
-* Report to our funders on the numbers and types of people we are working with.    
-* Contact you in the event of unexpected circumstances (e.g. an event is cancelled); about     opportunities you might be interested in; to update you with news about Rumble Up the Ryshworth.     
-* Contact someone in the event of emergency     
-* Contact you to invite you to broadcast your news or views on the radio     
+
+* Contact you in the event of unexpected circumstances (e.g. an event is cancelled); about opportunities you might be interested in; to update you with news about Rumble Up the Ryshworth.     
+* Contact someone in the event of emergency       
 * (With your consent we can) use your data (e.g. photograph) on our website and marketing.
 
 ### How do we store your data?
@@ -134,7 +128,7 @@ You can set your browser not to accept cookies, and https://allaboutcookies.org/
 
 We do track the use of our website, but we use a privacy respecting service, [Matamo](https://matomo.org/) hosted by a local company [Cooperative IT](https://cooperativeit.co.uk/). Our data protection officer is a company director of Cooperative IT.
 
-We record annonymised data of visits to pages on the website, but do not connect this to individuals, or leave tracking cookies.
+We record anonymised data of visits to pages on the website, but do not connect this to individuals, or leave tracking cookies.
 
 ## Privacy policies of other websites
 The Rumble Up the Ryshworth website contains links to other websites. 
@@ -155,18 +149,11 @@ Should you wish to report a complaint or if you feel that Rumble Up the Ryshwort
 ## About this Policy
 This text is [adapted from a template](https://gdpr.eu/wp-content/uploads/2019/01/Our-Company-Privacy-Policy.pdf) from [GDPR.eu](https://gdpr.eu)
 
-This privacy policy is **version 1.1** and was last updated on **28th November 2022**.
+This privacy policy is **version 1.0** and was last updated on **25th January 2025**.
 
 ## Changelog
 
-The text on this page is tracked in a version control system.<br/> [View the full changelog](https://github.com/caprenter/bingley-music-town/blob/main/privacy.md) 
+The text on this page is tracked in a version control system.<br/> [View the full changelog](https://github.com/caprenter/rumble/blob/main/privacy.md) 
 
-**Version 1.2 - 09th February 2023**
-* Adds a section about our use of Google Documents and makes clear that Google Account information may be seen by other people when using those services.
-
-**Version 1.1 - 28th November 2022**
-* Changes the length of time we retain your personal data from 2 years to 3 years before we destroy it.
-* Adds this 'Changelog' section
-
-**Version 1.0 - 10th November 2022**
+**Version 1.0 - 25th January 2025**
 * First published version

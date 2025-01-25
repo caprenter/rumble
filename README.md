@@ -27,7 +27,7 @@ Alternatively you can just work on the site as you would with a general Jekyll p
 
 Clone the repository
 
-	cd bingley-music-town
+	cd rumble
 
 ### With Docker
 
@@ -51,7 +51,49 @@ Clone the repository
 
 # General Site Building
 
-## Generating individual organisation pages
+## Add a new gig
+
+### Splash Image
+
+Create a new 16:9 splash image to go at the top of the page and stored it in `assets/images/splashes`
+
+### Band Images
+ 
+Create 4:3 images of each of the bands and store them in `assets/images/bands`
+
+### Update the spreadsheet
+
+Add the gig data to the [Bingley Music Town Live Music spreadsheet](https://docs.google.com/spreadsheets/d/1-Eugy7Wfl0O2dSach2D2dOoE8JEW2tI3sqChuCvLUYg/edit?gid=0#gid=0)
+
+
+#### Create a new event in the 'Events' tab
+
+NB: The bands should be comma separated in the Events tab, with NO space between them. e.g. band 1,band 2
+
+NB: The images should all be the file names of 4:3 images that are stored in `assets/images/bands`
+
+#### Make sure / add the artists details to the 'Artists' tab
+
+NB: The image should be the file name of a 4:3 image that is stored in `assets/images/bands`
+
+### Download the event data
+
+In /docs/scripts run 
+  
+    ./fetch_events_data.sh #to fetch the data from the spreadsheet
+
+This fetches 3 csv files (artists.csv, events.csv, venues.csv) and places them in `_data`
+
+### Generate SumUp codes and links
+
+Create a payment link at SumUp - make sure to add a notes field.
+
+* title: The link title. Example: "Rumble #1 Jan 2025 Gurgles + Billy Billy 5P"
+* link: a payment url e.g. https://pay.sumup.com/b2c/Q9ARAVHL
+* qrcode: an image file in this format: qrcode_sumup_jan2025.png
+
+
+
 We generate markdown for each organisation page by using the pagemaster plugin/gem.
 
 This creates pages from a .yml data file, in this case, organisations.yml, by running 

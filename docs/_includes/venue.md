@@ -48,3 +48,15 @@ The club is very close to the Leeds / Liverpool canal if you want an off road ro
 #### Bicycle 
 
 The Leeds / Liverpool canal provides an off road route to a point very close to the venue. There is cycle parking at the station, and it's possible to find places to lock your bike up outside the venue.
+
+
+<script>        
+    // Creating a map object
+    var map = L.map('map').setView([53.861240, -1.846223], 13);
+    var marker = L.marker([53.861240, -1.846223]).addTo(map);
+    // Creating a Layer object
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+</script>
