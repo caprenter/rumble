@@ -1,5 +1,3 @@
-### Links
-
 [Home]({{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %})<br/>
 [About]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/#about)<br/>
 [What's On]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/#whats-on)<br/>
