@@ -1626,7 +1626,7 @@ body.page-template .post-title {
 
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
-.post-content img {
+.post-content img, .gallery img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -1640,6 +1640,10 @@ body.page-template .post-title {
     -webkit-transform: translateX(-50%); /* for Safari and iOS */
     -ms-transform: translateX(-50%); /* for IE9 */
     transform: translateX(-50%);
+}
+
+.gallery {
+ margin-bottom:2em;
 }
 
 .help img {
