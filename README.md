@@ -80,6 +80,8 @@ Add the gig data to the [Bingley Music Town Live Music spreadsheet](https://docs
 
 **NB** The images should all be the file names of 4:3 images that are stored in `assets/images/bands`
 
+**NB** The Description MUST contain the word "Rumble"!!
+
 #### Make sure / add the artists details to the 'Artists' tab
 
 **NB** The image should be the file name of a 4:3 image that is stored in `assets/images/bands`
