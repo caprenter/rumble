@@ -98,13 +98,11 @@ This fetches 3 csv files (artists.csv, events.csv, venues.csv) and places them i
 
 ### Create an event page 
 
-Copy an existing event from the `/events' directory and rename it in mmmyyyyy format. 
+Copy an existing event from the `/events' directory and rename it in mmm-yyyyy format. 
 
 Edit the front matter, updating the `title`, `date`, and `cover` items.
 
 The page title that overlays the splash/cover image is generated from the `title` and the (formated) `date` field 
-
-Change the names of the artists in the `assign artist` sections.
 
 Next update the SumUp codes (see below) 
 
@@ -116,7 +114,7 @@ Create a payment link at SumUp - make sure to add a notes field.
 * link: a payment url e.g. https://pay.sumup.com/b2c/Q9ARAVHL
 * qrcode: an image file in this format: qrcode_sumup_jan2025.png
 
-Update the `include` statement on your event page to use those values.
+Update the `sumupLink` in the front matter with the link.
 
 
 ## Images
@@ -181,8 +179,6 @@ Fetch the data with the script:
     
     #Fetch and commit and push changes to origin main
     ./fetch_events_data.sh update push
-
-We use the data to build the What's On data on the front page, a previous events page, and some of the data on the individual events pages.
 
 # Testing
 

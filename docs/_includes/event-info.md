@@ -4,7 +4,9 @@
 {% include artists.md %}
 
 {% assign artist = site.data.artists | where:"Name", artists[1] | first %}
+{% if artist %}
 {% include artists.md %}
+{% endif %}
 
 {% capture sumupTitle %}Rumble #{{ page.rumble-number }} {{ page.date | date: "%b %Y" }} {{ page.title }}{% endcapture %}
 
