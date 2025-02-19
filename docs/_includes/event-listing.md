@@ -16,7 +16,7 @@
 {% endfor %}
 
 <div class="event-date" markdown="1">
-{{ event.Date | date: "%A %d %B %Y" }} <span style="color: #000">/</span> Doors: {{ event.Time}} / {{ event.Price }}
+{{ event.Date | date: "%A %d %B %Y" }} <span style="color: #000">/</span> Doors: {{ event.Time}} <span style="color: #000">/</span> {{ event.Price }}
 </div>
 
 <a href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/events/{{ event.Date | date: '%b-%Y' | downcase }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">More Details</a>
