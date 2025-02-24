@@ -9,13 +9,13 @@ current: home
 # we use {% assign film = site.data.films | where:"our-id", page.our-id | first  %}
 # in _includes/head.html to make use of the data below using e.g. film.main-image
 # Defaults to use if no 'next film'
-cover: splashes/BillyBilly5p.jpg
+cover: splashes/QoH.jpg
 
 ---
 <!-- < default -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 <!-- The big featured header  -->
-<header class="main-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url({{ site.baseurl }}/assets/images/{{ page.cover }}); background-position-y:0">
+<header class="main-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1)), url({{ site.baseurl }}/assets/images/{{ page.cover }}); background-position-y:0">
 
     <div class="vertical">
         <div class="main-header-content inner">
