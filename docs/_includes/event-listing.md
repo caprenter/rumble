@@ -9,7 +9,7 @@
 {% for performer in performers -%}
   {%- if forloop.length > 1 -%}
     {% if forloop.first %}
-## {{ performer }} + {% continue %}{% endif %} {{ performer }}{% unless forloop.last %}, {% endunless -%}
+## {{ performer }} + {% continue %}{% endif %} {{ performer }}{% unless forloop.last %} + {% endunless -%}
   {% else %}
 ## {{ performer }}
   {%- endif -%}
