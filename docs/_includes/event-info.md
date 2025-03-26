@@ -1,3 +1,10 @@
+<!-- {% assign events = site.data.events | sort: "Date"  %}
+{% for event in events %}
+{% if event.Date contains page.event-date  %}
+{{event.Description}}
+{% endif %}
+{% endfor %} -->
+
 {% assign artists = page.title | split: " + " %}
 
 {% assign artist = site.data.artists | where:"Name", artists[0] | first %} 
@@ -10,8 +17,8 @@
 {% endif %}
 {% endif %}
 
-{% capture sumupTitle %}Rumble #{{ page.rumble-number }} {{ page.date | date: "%b %Y" }} {{ page.title }}{% endcapture %}
+{% capture sumupTitle %}Rumble #{{ page.rumble-number }} {{ page.event-date | date: "%b %Y" }} {{ page.title }}{% endcapture %}
 
-{% capture sumupCode %}qrcode_sumup_{{ page.date | date: "%b%Y" | downcase }}.png{% endcapture %}
+{% capture sumupCode %}qrcode_sumup_{{ page.event-date | date: "%b%Y" | downcase }}.png{% endcapture %}
 
 {% include sumup.md title=sumupTitle link=page.sumupLink qrcode=sumupCode %}
