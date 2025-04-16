@@ -17,6 +17,13 @@
 {% endif %}
 {% endif %}
 
+{% if artists[2] %}
+{% assign artist = site.data.artists | where:"Name", artists[2] | first %}
+{% if artist %}
+{% include artists.md %}
+{% endif %}
+{% endif %}
+
 {% capture sumupTitle %}Rumble #{{ page.rumble-number }} {{ page.event-date | date: "%b %Y" }} {{ page.title }}{% endcapture %}
 
 {% capture sumupCode %}qrcode_sumup_{{ page.event-date | date: "%b%Y" | downcase }}.png{% endcapture %}
