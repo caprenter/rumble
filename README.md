@@ -100,7 +100,7 @@ This fetches 3 csv files (artists.csv, events.csv, venues.csv) and places them i
 
 Copy an existing event from the `/events' directory and rename it in mmm-yyyyy format. 
 
-Edit the front matter, updating the `title`, `date`, and `cover` items.
+Edit the front matter, updating the `title`, `event-date`, and `cover` items.
 
 The page title that overlays the splash/cover image is generated from the `title` and the (formated) `date` field 
 
