@@ -9,7 +9,7 @@ current: home
 # we use {% assign film = site.data.films | where:"our-id", page.our-id | first  %}
 # in _includes/head.html to make use of the data below using e.g. film.main-image
 # Defaults to use if no 'next film'
-cover: splashes/QoH.jpg
+cover: splashes/FlashCassetteByNigelBain.jpg
 
 ---
 <!-- < default -->
