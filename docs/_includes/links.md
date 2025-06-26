@@ -2,6 +2,7 @@
 [About]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/#about)<br/>
 [What's On]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/#whats-on)<br/>
 [Previous Events]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/events/previous-events)<br/>
+[Gallery]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/gallery )<br/>
 [Contact]({% if site.baseurl %}{{ site.baseurl }}{% endif %}/contact )<br/>
 
 <div class="icons">
