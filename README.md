@@ -132,6 +132,8 @@ Handy resize code
 
 Gallery Images should be no wider than 1024px
 
+Rename them all 'Rumble(Event No.)_' e.g Rumble1_billybilly5p
+
 Thumbnails should be 400px square - see below.
 
 Place images in '/assets/images/gallery'
