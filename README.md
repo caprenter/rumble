@@ -130,7 +130,7 @@ Handy resize code
 
 ### Gallery
 
-Gallery Images should be no wider than 1024px
+Gallery Images should be no wider than 1080px
 
 Rename them all 'Rumble(Event No.)_' e.g Rumble1_billybilly5p
 
