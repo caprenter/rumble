@@ -9,7 +9,8 @@ current: home
 # we use {% assign film = site.data.films | where:"our-id", page.our-id | first  %}
 # in _includes/head.html to make use of the data below using e.g. film.main-image
 # Defaults to use if no 'next film'
-cover: splashes/tiger-island_rumble.jpg
+# cover: splashes/tiger-island_rumble.jpg
+cover: splashes/crumbs2.jpg
 ---
 <!-- < default -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->

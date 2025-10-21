@@ -130,7 +130,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   }
   a.site-name {
     font-size: 0.8em;
-    padding: 0.5em;
+    padding: 0.5em 0;
     font-size: 3.6rem;
     letter-spacing: -1px;
   }
@@ -2456,7 +2456,7 @@ figcaption {
         height: 40vh;
     }
     a.site-name {
-        font-size: 2.6rem;
+        font-size: 2rem;
       }
 
     /*.identity {
