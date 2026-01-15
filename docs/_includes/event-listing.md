@@ -1,8 +1,12 @@
 <div class="col-md-3" markdown="1">
+
  ![{{ event.Title }}]({{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}/assets/images/bands/{{ event.Image1 }}){:class="img-responsive"}
 </div>
 
 <div class="col-md-6 px-5" markdown="1">
+{% if date >= "2026-01-31"  %}
+<div class="fw-bold text-uppercase">Event Postponed Until We Find A Venue</div>
+{% endif %}
 <!-- PERFORMERS -->
 {% if event.Presents %}<h5>{{ event.Presents }}</h5>{% endif %}
 {% assign performers = event.Artists | split: "," %}
