@@ -12,7 +12,7 @@
 {{ upcoming-events | markdownify }}
 
 # About
-Rumble Up The Ryshworth is set of not-for-profit, Pay What You Feel gigs that brings Live Music from Alternative, Independent Artists to the Bingley area.
+Rumble Up Bingley is set of not-for-profit, Pay What You Feel gigs that brings Live Music from Alternative, Independent Artists to the Bingley area.
 
 It is supported by [Bingley Music Town](https://bingleymusictown.org.uk/), an organisation that brings together the people that care about music in the area to make sure there are great musical opportunities for everyone now, and into the future.
 

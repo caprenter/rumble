@@ -7,15 +7,15 @@ highlighter: rouge
 language: 'en-uk'
 
 # Website info
-name: "Rumble Up the Ryshworth"
-title: "Rumble Up the Ryshworth" # the name of your site, e.g. ACME Corp.
+name: "Rumble Up Bingley"
+title: "Rumble Up Bingley" # the name of your site, e.g. ACME Corp.
 #tagline: "Bringing together the people that care about music in our"
 email: info@bingleymusictown.org.uk
 description: >- # this means to ignore newlines until "baseurl:"
- Rumble Up The Ryshworth is set of Pay What You Feel gigs that brings Live Music from Alternative, Independent Artists to the Bingley area.
+ Rumble Up Bingley is set of Pay What You Feel gigs that brings Live Music from Alternative, Independent Artists to the Bingley area.
 
 logo: 'assets/images/logo.jpg' # No leading slash!
-author: Rumble Up the Ryshworth
+author: Rumble Up Bingley
 url: "https://rumbleupbingley.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 #baseurl: "" # the subpath of your site, e.g. /blog
 #google_analytics: UA-111111111-1

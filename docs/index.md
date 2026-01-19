@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rumble Up the Ryshworth
+title: Rumble Up Bingley
 class: 'home-template'
 navigation: True
 #logo: /assets/images/splashes/BillyBilly5p.jpg

@@ -8,12 +8,19 @@
     <div class="col-md-4">
     {% capture links %}{% include links.md %}{% endcapture %}
     {{ links | markdownify }}
-    <div><a href="https://bradford2025.co.uk/" class="footer-logo"><img style="max-width:140px" src="{{ '/assets/images/love-bradford.png' | relative_url }}" alt="Bradford 2025" class="img-responsive" /></a>
+    <div>
+        <a href="https://bradford2025.co.uk/" class="footer-logo"><img style="max-width:140px" src="{{ '/assets/images/love-bradford.png' | relative_url }}" alt="Bradford 2025" class="img-responsive" /></a>
     </div>
     </div>
     <div class="col-md-8">
         <div class="row align-items-center">
-            <h3>Supported by</h3>
+            <h3>Rumble Up Bingley is delivered in partnership with:</h3>
+            <div class="col-md-4">
+                <a href="https://www.bingleyartscentre.co.uk/" class="footer-logo"><img style="max-width:150px" src="{{ '/assets/images/BACWHT.png' | relative_url }}" alt="Bingley Arts Centre Logo" class="img-responsive" /></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://www.bingleyartscentre.co.uk/" class="footer-logo"><img style="max-width:150px" src="{{ '/assets/images/TTU_LOGO_V2.png' | relative_url }}" alt="The Theatre Upstairs Logo" class="img-responsive" /></a>
+            </div>
             <div class="col-md-4">
                 <a href="https://bingleymusictown.org.uk/" class="footer-logo"><img style="max-width:150px" src="{{ '/assets/images/our_logos/BMT_logo_White.png' | relative_url }}" alt="Bingley Music Town Logo" class="img-responsive" /></a>
             </div>
@@ -38,6 +45,6 @@
 </div>
 
 <div class="copyright">
-    <p>All content &copy; the respective bands and artists &amp; Rumble Up the Ryshworth. Live performance images &copy; Bingley Camera Club members.<br>
+    <p>All content &copy; the respective bands and artists &amp; Rumble Up Bingley. Live performance images &copy; Bingley Camera Club members.<br>
         <a href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/privacy">Privacy Statement</a></p>
 </div>

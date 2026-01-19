@@ -1,4 +1,4 @@
-# Rumble Up the Ryshworth Website
+# Rumble Up Bingley Website
 
 ## About
 This is a static site that displays at https://rumbleupbingley.co.uk/

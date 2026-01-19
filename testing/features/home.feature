@@ -19,7 +19,7 @@ When visiting the homepage
 	@intro
 	Scenario: I am not logged on I should see the introductory text
   	Given I am on "/"
-		Then I should see "Rumble Up the Ryshworth brings together the people that care about music in our area, to make sure there are great musical opportunities for everyone now, and into the future."
+		Then I should see "Rumble Up Bingley brings together the people that care about music in our area, to make sure there are great musical opportunities for everyone now, and into the future."
 
  @footer_menu
 	Scenario: I am not logged on I should see the footer menu.

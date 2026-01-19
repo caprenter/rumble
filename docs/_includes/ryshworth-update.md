@@ -1,11 +1,11 @@
-# Important Update Regarding Rumble Events
+# Important Update Regarding Rumble Up Bingley Events
 
-## From February 2026 The Rumble is moving to Bingley Arts Centre
+## From February 2026 Rumble Up is moving to the Theatre Upstairs at Bingley Arts Centre
 
-We are aware of the recent announcement from the Ryshworth Club that they plan to close their doors from the 31st January 2026. 
+We are sad that our home for the past year, the Ryshworth Club, is planning to close from the 31st January 2026. 
 
-Following discussions with Bingley Arts Centre, we're pleased to announce that they will be hosting our future events in the Theatre Upstairs.
+However, we're pleased to announce that we will be hosting our future events in the Theatre Upstairs at [Bingley Arts Centre](https://www.bingleyartscentre.co.uk/).
 
-In the meantime, we understand discussions about the future of the Ryshworth Club are on going. We'd love to help live music thrive there in th future if possible.
+In the meantime, we understand discussions about the future of the Ryshworth Club are on going. We'd love to help live music thrive there in the future if possible.
 
-Thanks to all the amazing support from the staff at The Ryshworth & for your continued support and understanding during this transition — it means the world to us.
+Thanks to all the amazing support from the staff at the Ryshworth Club & for your continued support and understanding during this transition — it means the world to us.
