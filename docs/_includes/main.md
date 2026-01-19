@@ -36,12 +36,13 @@ We provide volunteering opportunities and experience for people in all aspects o
 
 A big thank you to 
 
+* Bingley Arts Centre for taking us in when we needed a venue
 * Lukas from FUSE for the loan of the PA, and storing it
 * [Bingley Camera Club](https://bingleycameraclub.co.uk/) for taking such brilliant photos for us. Especially Nigel Bain and Marcus Ratray. 
 * [Playing For Kicks](https://playingforkicks.co.uk/) for additional, essential, bits of equipment
 * [The Record Club](https://recordclub.org.uk/) for the record decks
 * All the volunteers that make it happen each month
-* Staff and members of The Ryshworth Club for letting us do this thing
+* Staff and members of The Ryshworth Club for helping us get this off the ground and supporting us through 2025
 * You for coming and supporting the events
 
 </div>
