@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Rumble Up Bingley
+title: Rumble Events Bingley
 class: 'home-template'
 navigation: True
 #logo: /assets/images/splashes/BillyBilly5p.jpg

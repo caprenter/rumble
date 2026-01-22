@@ -1,4 +1,4 @@
-# Rumble Up Bingley Website
+# Rumble Events Bingley Website
 
 ## About
 This is a static site that displays at https://rumbleupbingley.co.uk/
