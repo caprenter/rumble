@@ -24,7 +24,7 @@ If you'd like to play at a Rumble Events Bingley event, please email or send us 
 
 <div class="artist icons">
     <ul class="list-inline">
-        <li class="list-inline-item"><a href="https://www.facebook.com/rumbleuptheryshworth" title="Find us on Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.instagram.com/rumbleuptheryshworth/" title="Find us on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.facebook.com/rumbleeventsbingley" title="Find us on Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.instagram.com/rumbleeventsbingley/" title="Find us on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
     </ul>
 </div>
