@@ -6,7 +6,7 @@
 
 {% for event in events %}
 {% assign mod2 = forloop.index | modulo: 2 %}
-{% if event.Venue == "Ryshworth Club"  %}
+{% if event.Venue == "Bingley Arts Centre"  %}
 {% if event.Description contains "Rumble"  %}
 {% if event.Date >= dateToday  %}
 
