@@ -6,7 +6,10 @@
 
 # What’s On
 
-<h2 class="text-center all-gigs">All gigs are on the Third Friday Of The Month</h2>
+<h2 class="text-center all-gigs">Most of our gigs are on the Third Friday Of The Month</h2>
+
+**Exceptions for 2026: April 24th 2026, May 2026 (TBC), Spetember 2026 (TBC)**
+{: class="text-center"}
 
 {% capture upcoming-events %}{% include upcoming-events.md %}{% endcapture %}
 {{ upcoming-events | markdownify }}
