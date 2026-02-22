@@ -2,16 +2,16 @@
 <section class="main-page">
 <div markdown="1">
 
-<div class="container col px-4 py-5 bg-light">
+<div class="container col px-4 py-1 bg-light">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
+      <div class="col col-lg-6">
         <img src="/assets/images/vince_cayo_at_the_chip.jpg" class="d-block mx-lg-auto img-fluid" alt="Vince Cayo at the Chip n Ern" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3 text-start">Rumble Events & The Chip 'N' Ern</h1>
-        <p  markdown="1">We're helping the Chip N Ern put on live music every Thursday in the upstairs bar. Find out [more on their dedicated website](https://chip.rumbleupbingley.co.uk/).</p>
+        <p  markdown="1">We're helping the Chip 'N' Ern in Bingley put on live music every Thursday in the upstairs bar. Find out [more on their dedicated website](https://chip.rumbleupbingley.co.uk/).</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a href="https://chip.rumbleupbingley.co.uk/" type="button" class="btn btn-outline-secondary btn-lg px-4">Music at the Chip N Ern </a>
+          <a href="https://chip.rumbleupbingley.co.uk/" type="button" class="btn btn-outline-secondary btn-lg px-4">Music at the Chip 'N' Ern</a>
         </div>
       </div>
     </div>
