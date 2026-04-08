@@ -21,7 +21,7 @@
 
 <h2 class="text-center all-gigs">Most of our gigs are on the Third Friday Of The Month</h2>
 
-**Exceptions for 2026: April 24th 2026, May 2026 (TBC), Spetember 2026 (TBC)**
+**Exceptions for 2026: April 24th 2026, May 29th 2026, September 2026 (TBC)**
 {: class="text-center"}
 
 {% capture upcoming-events %}{% include upcoming-events.md %}{% endcapture %}
