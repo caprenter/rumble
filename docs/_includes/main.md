@@ -9,9 +9,9 @@
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3 text-start">Rumble Events & The Chip 'N' Ern</h1>
-        <p  markdown="1">We're helping the Chip 'N' Ern in Bingley put on live music every Thursday in the upstairs bar. Find out [more on their dedicated website](https://chip.rumbleupbingley.co.uk/).</p>
+        <p  markdown="1">We're helping the Chip 'N' Ern in Bingley put on live music every Thursday in the upstairs bar. Find out [more on their dedicated website](https://chip.rumbleevents.co.uk/).</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a href="https://chip.rumbleupbingley.co.uk/" type="button" class="btn btn-outline-secondary btn-lg px-4">Music at the Chip 'N' Ern</a>
+          <a href="https://chip.rumbleevents.co.uk/" type="button" class="btn btn-outline-secondary btn-lg px-4">Music at the Chip 'N' Ern</a>
         </div>
       </div>
     </div>

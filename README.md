@@ -1,7 +1,7 @@
 # Rumble Events Bingley Website
 
 ## About
-This is a static site that displays at https://rumbleupbingley.co.uk/
+This is a static site that displays at https://rumbleevents.co.uk/
 
 ## Deployment
 It is deployed via the docs directory of the main branch of this repo using Github Pages.
