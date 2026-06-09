@@ -10,7 +10,7 @@ current: home
 # in _includes/head.html to make use of the data below using e.g. film.main-image
 # Defaults to use if no 'next film'
 # cover: splashes/tiger-island_rumble.jpg
-cover: splashes/gilank_live.jpg
+cover: splashes/david-cronenbergs-wife_2.jpg
 ---
 <!-- < default -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
