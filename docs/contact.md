@@ -44,7 +44,7 @@ I wanted to share the email that Pete from [Messy Eater](https://www.messyeaterm
 
 *I'm a York-based artist with friends and family in the Haworth / Bingley area.  My music has been supported by Apple Music, BBC Introducing (I did a live session last year) and Amazing Radio.  I'm playing Camper Calling festival this summer alongside Nile Rodgers & Chic, Primal Scream and more.  Your events look awesome - I'd love to come and play!*
 
-**Establishes his credentials - and it sounds impressive and i'm starting to think he's a good fit for us - interesting, but what does he sound like?**
+**Establishes his credentials - and it sounds impressive and I'm starting to think he's a good fit for us - interesting, but what does he sound like?**
 
 *For fans of: Gorillaz, Beck, Jungle, The Flaming Lips*
 
@@ -75,7 +75,7 @@ Music video with live footage: https://youtu.be/4LIewGg5780?si=yDPWCTakLPWPVN4w 
 *Cheers!
 Pete*
 
-**and finally more links and contact details including aphone number**
+**and finally more links and contact details including a phone number.**
 
 *E: email<br>
 W: [www.messyeatermusic.com](https://www.messyeatermusic.com/)<br>
