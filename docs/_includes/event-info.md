@@ -24,8 +24,8 @@
 {% endif %}
 {% endif %}
 
-{% capture sumupTitle %}Rumble #{{ page.rumble-number }} {{ page.event-date | date: "%b %Y" }} {{ page.title }}{% endcapture %}
+<!-- {% capture sumupTitle %}Rumble #{{ page.rumble-number }} {{ page.event-date | date: "%b %Y" }} {{ page.title }}{% endcapture %}
 
-{% capture sumupCode %}qrcode_sumup_{{ page.event-date | date: "%b%Y" | downcase }}.png{% endcapture %}
+{% capture sumupCode %}qrcode_sumup_{{ page.event-date | date: "%b%Y" | downcase }}.png{% endcapture %} -->
 
 {% include sumup.md title=sumupTitle link=page.sumupLink qrcode=sumupCode %}
