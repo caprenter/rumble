@@ -5,6 +5,7 @@
 Bingley Arts Centre<br> Main Street<br> Bingley<br> England<br> BD16 2LZ
 
 * The venue is an upstairs space, but is fully accessible by an access lift. 
+* **PLEASE NOTE: The bar ONLY takes card payments**
 * Live Music finishes in time for the last buses and trains, but do check the times in case we've got it wrong.
 
 See: [Bingley Arts Centre Visit page](https://www.bingleyartscentre.co.uk/visit) for details about the venue, accessibility information, and how to get there.
