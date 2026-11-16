@@ -73,6 +73,9 @@ Create 4:3 images of each of the bands and store them in `assets/images/bands`
 
 Add the gig data to the [Bingley Music Town Live Music spreadsheet](https://docs.google.com/spreadsheets/d/1-Eugy7Wfl0O2dSach2D2dOoE8JEW2tI3sqChuCvLUYg/edit?gid=0#gid=0)
 
+#### Tickets
+
+If the event has tickets then add the link to the spreadsheet, this website will pick that up automatically on an event page. The code is in `include/sumup`
 
 #### Create a new event in the 'Events' tab
 
